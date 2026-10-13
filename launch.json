@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SealToken",
+    "name": "seal",
+    "symbol": "SEAL",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8800,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x12a7aad083cef06fef7c295514b52fc8bc81960d"
+  },
+  "notes": "SealToken is a fixed-supply ERC-20 named seal (SEAL) with 18 decimals and no constructor arguments. Its constructor mints 1,000,000,000 SEAL once to msg.sender, the launch factory. It has no owner, external mint or burn function, pause, blacklist, or transfer tax. Transfers deliver the requested amount. No application contracts are deployed. The pool pairs SEAL with IMD at the supplied address, with fee 12500 and tick spacing 60. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
